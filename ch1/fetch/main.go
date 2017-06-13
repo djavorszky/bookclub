@@ -33,6 +33,9 @@ func main() {
 		}
 		resp.Body.Close()
 
+		fmt.Printf("\n")
+		fmt.Printf("Status code and label: %s\n", resp.Status)
+
 		fmt.Printf("Size: %.2f kb", float64(n)/1024)
 	}
 }
